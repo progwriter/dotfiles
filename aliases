@@ -1,0 +1,55 @@
+# Ls/grep/ps/df
+alias ls='ls -Fp'
+alias l='ls'
+alias sl='ls'
+alias ll='ls -l'
+alias lst='ls -lt'
+alias la='ls -A'
+alias lal='ls -Al'
+alias rmf='rm -f'
+alias rmrf='rm -rf'
+#alias grep='grep -iR --color'
+alias egrep='grep -iR --color -E'
+alias clear='clear;ls'
+alias df='df -h'
+alias du='du -hs'
+alias pss='ps -eo pid,pcpu,pmem,args'
+
+# Python/Vim/Latex
+alias p='python'
+alias v='vim'
+alias m='make'
+alias gv='gvim'
+alias ka='kinit -l7d; aklog'
+alias lm='latexmk -pdf main'
+alias lmq='latexmk -pdf main -silent'
+alias lc='latexmk -c'
+
+# Git 
+alias g='git'
+alias ga='git add'
+alias gst='git status'
+alias gstl='git status | less'
+alias gsu='git status -uno'
+alias gup='git fetch && git rebase'
+alias gp='git pull'
+alias gpu='git push origin'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gcount='git shortlog -sn'
+alias gcp='git cherry-pick'
+alias glg='git log --stat --max-count=5'
+alias gf='git fetch --all -p'
+
+# Sublime for mac
+alias subl="open -a 'Sublime Text'"
+
+# Edit rc files
+alias vimrc='$EDITOR ~/.vimrc'
+alias zshrc='$EDITOR ~/.zshrc && source ~/.zshrc'
+
+# For batfish
+alias updateref='find . -name "*.testout" | while read i; do mv $i ${i%.testout}; done'
